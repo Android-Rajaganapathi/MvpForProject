@@ -1,0 +1,587 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">font/nunito_regular</item>
+        <item name="android:colorBackground">@color/greyLight</item>
+        <item name="android:colorForeground">@color/black</item>
+    </style>
+
+    <!--    Pin widget      -->
+    <style name="PinWidget" />
+
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--    Custom Buttons  -->
+    <style name="MyButton" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MyButton.SecondaryCurved">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_secondary_round</item>
+    </style>
+
+    <style name="MyButton.PrimaryCured">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_primary_round</item>
+    </style>
+
+    <style name="MyButton.Secondary">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_secondary</item>
+    </style>
+
+    <style name="MyButton.Primary">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_primary</item>
+    </style>
+    <!--    End of Custom Buttons  -->
+
+    <!--    Custom Edit text    -->
+    <style name="MyEditText" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+    <!--    End Custom Edit text    -->
+
+    <!--    Vertical and Horizontal Lines  -->
+    <style name="HorizontalLineDark">
+        <item name="android:background">@color/grey</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="VerticalLineDark">
+        <item name="android:background">@color/grey</item>
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:background">@color/greyLight</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="VerticalLine">
+        <item name="android:background">@color/greyLight</item>
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--    End of Vertical and Horizontal Lines  -->
+
+    <!--    Font    -->
+    <style name="Bold">
+        <item name="fontFamily">font/nunito_bold</item>
+    </style>
+
+    <!--    Font colors     -->
+    <style name="GreenLight">
+        <item name="android:textColor">@color/greenLight</item>
+    </style>
+
+    <style name="Green">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="Orange">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BlackLight">
+        <item name="android:textColor">@color/blackLight</item>
+    </style>
+
+    <style name="Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="GreyLight">
+        <item name="android:textColor">@color/greyLight</item>
+    </style>
+
+    <style name="White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--    End of Font colors     -->
+
+    <!--    Font colors Bold    -->
+    <style name="Bold.GreenLight">
+        <item name="android:textColor">@color/greenLight</item>
+    </style>
+
+    <style name="Bold.Green">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="Bold.Orange">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Bold.BlackLight">
+        <item name="android:textColor">@color/blackLight</item>
+    </style>
+
+    <style name="Bold.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="Bold.GreyLight">
+        <item name="android:textColor">@color/greyLight</item>
+    </style>
+
+    <style name="Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--    End of Font colors Bold    -->
+
+    <!--    Font Size   -->
+    <!--    Font Color Green    -->
+    <style name="Green.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Green.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Green.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Green.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Green.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Green.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Green.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Green    -->
+
+    <!--    Font Color Orange    -->
+    <style name="Orange.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Orange.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Orange.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Orange.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Orange.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Orange.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Orange.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Orange    -->
+
+    <!--    Font Color Black    -->
+    <style name="Black.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Black.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Black.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Black.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Black.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Black.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Black.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Black    -->
+
+    <!--    Font Color BlackLight    -->
+    <style name="BlackLight.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="BlackLight.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="BlackLight.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="BlackLight.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="BlackLight.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="BlackLight.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="BlackLight.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color BlackLight    -->
+
+    <!--    Font Color Grey    -->
+    <style name="Grey.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Grey.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Grey.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Grey.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Grey.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Grey.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Grey.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Grey    -->
+
+    <!--    Font Color GreyLight    -->
+    <style name="GreyLight.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="GreyLight.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="GreyLight.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="GreyLight.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="GreyLight.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="GreyLight.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="GreyLight.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color GreyLight    -->
+
+    <!--    Font Color White    -->
+    <style name="White.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="White.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="White.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="White.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="White.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="White.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="White.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color White    -->
+
+    <!--    Font Size Bold  -->
+    <!--    Font Color Green    -->
+    <style name="Bold.Green.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.Green.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.Green.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.Green.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.Green.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.Green.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.Green.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Green    -->
+
+    <!--    Font Color Orange    -->
+    <style name="Bold.Orange.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.Orange.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.Orange.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.Orange.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.Orange.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.Orange.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.Orange.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Orange    -->
+
+    <!--    Font Color Black    -->
+    <style name="Bold.Black.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.Black.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.Black.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.Black.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.Black.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.Black.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.Black.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Black    -->
+
+    <!--    Font Color BlackLight    -->
+    <style name="Bold.BlackLight.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.BlackLight.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.BlackLight.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.BlackLight.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.BlackLight.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.BlackLight.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.BlackLight.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color BlackLight    -->
+
+    <!--    Font Color Grey    -->
+    <style name="Bold.Grey.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.Grey.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.Grey.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.Grey.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.Grey.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.Grey.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.Grey.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color Grey    -->
+
+    <!--    Font Color GreyLight    -->
+    <style name="Bold.GreyLight.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.GreyLight.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.GreyLight.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.GreyLight.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.GreyLight.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.GreyLight.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.GreyLight.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Color GreyLight    -->
+
+    <!--    Font Color White    -->
+    <style name="Bold.White.xxSmall">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="Bold.White.xSmall">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="Bold.White.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Bold.White.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Bold.White.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Bold.White.xLarge">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="Bold.White.xxLarge">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+    <!--    End of Font Bold Color White    -->
+
+</resources>
